@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halaman Detail Penduduk\n"
+            android:textSize="30sp"
+            android:layout_below="@id/imageViewLogo"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_horizontal"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_margin="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelNIK"
+                    android:text="NIK"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"/>
+                <TextView
+                    android:id="@+id/textViewNIK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@id/labelNIK"/>
+
+                <TextView
+                    android:id="@+id/labelNama"
+                    android:text="Nama"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewNIK"/>
+                <TextView
+                    android:id="@+id/textViewNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewNIK"
+                    android:layout_toRightOf="@+id/labelNama"/>
+                />
+
+                <TextView
+                    android:id="@+id/labelJenisKelamin"
+                    android:text="JenisKelamin"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewNama"
+                    />
+                <TextView
+                    android:id="@+id/textViewJenisKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewNama"
+                    android:layout_toRightOf="@id/labelJenisKelamin"
+                    />
+
+                <TextView
+                    android:id="@+id/labelTempatLahir"
+                    android:text="Tempat Lahir"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewJenisKelamin"
+                    />
+                <TextView
+                    android:id="@+id/textViewTempatLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Lahir"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewJenisKelamin"
+                    android:layout_toRightOf="@+id/labelTempatLahir"
+                    />
+
+                <TextView
+                    android:id="@+id/labelTanggalLahir"
+                    android:text="Tanggal Lahir"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewTempatLahir"
+                    />
+                <TextView
+                    android:id="@+id/textViewTanggalLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewTempatLahir"
+                    android:layout_toRightOf="@+id/labelTanggalLahir"
+                    />
+
+                <TextView
+                    android:id="@+id/labelAlamat"
+                    android:text="Alamat"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewTanggalLahir"
+                    />
+                <TextView
+                    android:id="@+id/textViewAlamat"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewTanggalLahir"
+                    android:layout_toRightOf="@id/labelAlamat"
+                    />
+
+                <TextView
+                    android:id="@+id/labelEmail"
+                    android:text="Email"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewAlamat"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="20sp"
+                    android:textColor="#1e0fbe"
+                    android:layout_below="@id/textViewAlamat"
+                    android:layout_toRightOf="@+id/labelEmail"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/labelTelepon"
+                    android:text="Telepon"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:layout_below="@id/textViewEmail"
+                    />
+                <TextView
+                    android:id="@+id/textViewTelepon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telepon"
+                    android:textSize="20sp"
+                    android:textColor="#1e0fbe"
+                    android:layout_toRightOf="@+id/labelTelepon"
+                    android:layout_below="@id/textViewEmail"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:singleLine="true"
+                    />
+
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</ScrollView>

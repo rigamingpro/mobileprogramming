@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Public Reg Apps</string>
+    <string-array name="jenis_kelamin_array">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

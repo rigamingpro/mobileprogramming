@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/nameApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Halaman Pengisian Data"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imageViewLogo"/>
+
+        <TextView
+            android:id="@+id/labelNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:textSize="17sp"
+            android:layout_below="@+id/nameApp"/>
+        <EditText
+            android:id="@+id/editTextNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 3201234560007"
+            android:inputType="number"
+            android:layout_below="@+id/labelNIK"/>
+
+        <TextView
+            android:id="@+id/labelNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="17sp"
+            android:layout_below="@id/editTextNIK"/>
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelNama"
+            android:hint="e.g. Aqil Muhammad Fachrezi" />
+
+        <TextView
+            android:id="@+id/labelJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Jenis Kelamin"
+            android:layout_below="@+id/editTextNama"/>
+
+        <LinearLayout
+            android:id="@+id/linearRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/labelJenisKelamin">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonLaki"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelTempatLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tempat Lahir"
+            android:textSize="17sp"
+            android:layout_below="@+id/linearRadio"/>
+        <EditText
+            android:id="@+id/editTextTempatLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelTempatLahir"
+            android:hint="e.g. Bandung" />
+
+        <TextView
+            android:id="@+id/labelTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textSize="17sp"
+            android:layout_below="@+id/editTextTempatLahir"/>
+        <EditText
+            android:id="@+id/editTextTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelTanggalLahir"
+            android:hint="e.g. 29/09/2003"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog" />
+
+        <TextView
+            android:id="@+id/labelAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="17sp"
+            android:layout_below="@+id/editTextTanggalLahir"/>
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelAlamat"
+            android:hint="e.g. Jalan Soekarno-Hatta" />
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Email"
+            android:textSize="17sp"
+            android:layout_below="@+id/editTextAlamat"/>
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelEmail"
+            android:hint="e.g. aqilmf@email.com" />
+
+        <TextView
+            android:id="@+id/labelTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. Telepon"
+            android:textSize="17sp"
+            android:layout_below="@+id/editTextEmail"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearTelepon"
+            android:layout_below="@+id/labelTelepon">
+
+            <Spinner
+                android:id="@+id/spinnerCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:entries="@array/country_codes" />
+
+            <EditText
+                android:id="@+id/editTextTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/spinnerCountryCode"
+                android:hint="e.g. 85156420342" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearTelepon"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:background="@drawable/rounded_button"/>
+    </RelativeLayout>
+
+</ScrollView>
